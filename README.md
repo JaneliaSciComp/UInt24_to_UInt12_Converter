@@ -1,4 +1,4 @@
-# UInt24_to_UInt12_Converter
+# UInt24 to UInt12_Converter FIJI Plugin
 FIJI ImageJ 1 Plugin to convert 24-bit pixels to 2x 12-bit pixels
 
 ## Running
