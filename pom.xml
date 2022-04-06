@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>31.1.0</version>
+	</parent>
+  <groupId>org.janelia.scicomp</groupId>
+  <artifactId>UInt24_to_UInt12_Converter</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>UInt24 to UInt12 Converter</name>
+  <description>Convert a 24-bit image to a 12-bit image with twice the pixels</description>
+	<url>https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter</url>
+	<inceptionYear>2012</inceptionYear>
+	<organization>
+		<name>UInt24toUInt12Converter</name>
+		<url>https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<url>https://opensource.org/licenses/BSD-2-Clause</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>mkitti</id>
+			<name>Mark Kittisopikul</name>
+			<url>https://imagej.net/User:mkitti</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Mark Kittisopikul</name>
+			<properties>
+				<id>>mkitti</id>
+			</properties>
+
+		</contributor>
+	</contributors>
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/tags/UInt24_to_UInt12_Converter</archive>
+		</mailingList>
+	</mailingLists>
+	<scm>
+		<connection>scm:git:https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter</connection>
+		<developerConnection>scm:git:git@github.com:JaneliaSciComp/UInt24_to_UInt12_Converter</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/JaneliaSciComp/UInt24_to_UInt12_Converter/actions</url>
+	</ciManagement>
+
+	<properties>
+		<package-name>org.janelia.scicomp</package-name>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>Howard Hughes Medical Institute</license.copyrightOwners>
+
+		<!-- NB: Deploy releases to the SciJava Maven repository. -->
+		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
+  		<enforcer.skip>true</enforcer.skip>
+	</properties>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ij</artifactId>
+			<version>2.0.0-beta-47-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
